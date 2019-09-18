@@ -13,6 +13,6 @@ public class SenhaUtilSecurity {
 	
 	public static boolean validaSenha(String senha, String senhaEncoded) {
 		BCryptPasswordEncoder validaSenha = new BCryptPasswordEncoder();
-		return validaSenha.matches(senha, senhaEncoded); 
+		return validaSenha.matches(senha, senhaEncoded);
 	}
 }
