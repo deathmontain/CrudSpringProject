@@ -20,7 +20,7 @@ public class CrudSpringProjectApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
+ 
 	@Bean
 	public CommandLineRunner commandlinerunner() {
 		return args -> {
