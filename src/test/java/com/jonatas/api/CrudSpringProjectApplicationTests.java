@@ -1,4 +1,4 @@
-package com.stefanini.api;
+package com.jonatas.api;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.stefanini.api.utils;
+package com.jonatas.api.utils;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

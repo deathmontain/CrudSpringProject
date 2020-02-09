@@ -1,4 +1,4 @@
-package com.stefanini.api;
+package com.jonatas.api;
 
 import java.util.List;
 
@@ -9,9 +9,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import com.stefanini.api.entities.Pessoa;
-import com.stefanini.api.repositories.PessoaRepository;
-import com.stefanini.api.utils.SenhaUtilSecurity;
+import com.jonatas.api.entities.Pessoa;
+import com.jonatas.api.repositories.PessoaRepository;
+import com.jonatas.api.utils.SenhaUtilSecurity;
 
 @SpringBootApplication
 public class CrudSpringProjectApplication {

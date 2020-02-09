@@ -1,4 +1,4 @@
-package com.stefanini.api.entities;
+package com.jonatas.api.entities;
 
 import java.util.List;
 import javax.persistence.CascadeType;
