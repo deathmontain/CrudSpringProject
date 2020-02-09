@@ -1,11 +1,11 @@
 language: java
 jdk:
-  - oraclejdk8
+   - oraclejdk8
 install:
   - mvn -N io.takari:maven:wrapper
   - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
-spring:  
+spring:
   jpa:
     hibernate:
       ddl-auto: create-drop

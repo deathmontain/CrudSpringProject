@@ -21,35 +21,35 @@ public class Usuario {
 	private String senha;
 	@OneToOne(fetch = FetchType.EAGER)
 	private Pessoa pessoa;
-	
+
 	public int getCd_Usuario() {
 		return Cd_Usuario;
 	}
-	
+
 	public void setCd_Usuario(int cd_Usuario) {
 		Cd_Usuario = cd_Usuario;
 	}
-	
+
 	public String getLg_Usuario() {
 		return Lg_Usuario;
 	}
-	
+
 	public void setLg_Usuario(String lg_Usuario) {
 		Lg_Usuario = lg_Usuario;
 	}
-	
+
 	public String getSenha() {
 		return senha;
 	}
-	
+
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	
+
 	public Pessoa getPessoa() {
 		return pessoa;
 	}
-	
+
 	public void setPessoa(Pessoa pessoa) {
 		this.pessoa = pessoa;
 	}
