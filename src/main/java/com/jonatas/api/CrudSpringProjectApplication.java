@@ -21,7 +21,7 @@ public class CrudSpringProjectApplication {
 	
 	@Autowired
 	private PessoaRepository pessoaRepository;
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(CrudSpringProjectApplication.class, args);
 	}
@@ -31,22 +31,21 @@ public class CrudSpringProjectApplication {
 		return args ->{
 			System.out.println("Quantidade de elementos por páginas = " 
 					+ this.qtdPaginas);
-		
-		String senhaEncoded = SenhaUtilSecurity.gerarBcrypt("123456");
-		senhaEncoded = SenhaUtilSecurity.gerarBcrypt("123456");
-		System.out.println("Senha válida: " + 
+
+			String senhaEncoded = SenhaUtilSecurity.gerarBcrypt("123456");
+		    System.out.println("Senha válida: " +
 				SenhaUtilSecurity.validaSenha("123456", senhaEncoded));	
 		
-		Pessoa pessoa = new Pessoa();
-		pessoa.setNomePessoa("Jônatas Santos");
-		pessoa.setCpf_pessoa(123456789);
-		pessoa.setTel_Pessoa("34791218");
-		pessoa.setCel_pessoa("016998780278");
-		
-		this.pessoaRepository.save(pessoa);
-		
-		List<Pessoa> pessoaDB = pessoaRepository.findAll();
-		pessoaDB.forEach(System.out::println);
-		};
+		    Pessoa pessoa = new Pessoa();
+			pessoa.setNomePessoa("Jônatas Santos");
+			pessoa.setCpf_pessoa(123456789);
+			pessoa.setTel_Pessoa("34791218");
+			pessoa.setCel_pessoa("016998780278");
+
+			this.pessoaRepository.save(pessoa);
+
+			List<Pessoa> pessoaDB = pessoaRepository.findAll();
+			pessoaDB.forEach(System.out::println);
+			};
 	}
 }
