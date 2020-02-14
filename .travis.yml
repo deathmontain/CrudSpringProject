@@ -24,3 +24,6 @@ spring:
 
 services:
   - mysql
+  url : jdbc:mysql://localhost:3306/flyway?useTimezone=true&serverTimezone=UTC
+  username: root
+  password: root
