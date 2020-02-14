@@ -35,7 +35,7 @@ public class CrudSpringProjectApplication {
 			String senhaEncoded = SenhaUtilSecurity.gerarBcrypt("123456");
 		    System.out.println("Senha válida: " +
 				SenhaUtilSecurity.validaSenha("123456", senhaEncoded));	
-		
+		    
 		    Pessoa pessoa = new Pessoa();
 			pessoa.setNomePessoa("Jônatas Santos");
 			pessoa.setCpf_pessoa(123456789);
