@@ -24,3 +24,5 @@ spring:
 
 services:
   - mysql
+before_install:
+  - mysql -u root --password="root"
